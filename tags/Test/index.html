@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>花落未央</title>
+        <title>Tags: Test | 花落未央</title>
         <meta name="author" content="花落未央" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
@@ -32,8 +32,6 @@
 
 
 
-
-<script src="/myblog/js/lib/home.js"></script>
 
 <link rel="stylesheet" href="/myblog/css/main.css" />
 
@@ -129,160 +127,51 @@
 </transition>
 
             <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-                <div id="home-head">
-    <div id="home-background" ref="homeBackground" data-images="/myblog/images/background.jpg"></div>
-    <div id="home-info" @click="homeClick">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>花落未央</h1>
-                <h3></h3>
-                <h5></h5>
-            </div>
-        </span>
-    </div>
-</div>
-<div id="home-posts-wrap" true ref="homePostsWrap">
-    <div id="home-posts">
-        
-
-<div class="post">
-    <a href="/myblog/2023/08/10/test/">
-        <h2 class="post-title">my one blog</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/8/10
-        </span>
+                <div id="archives">
+    
+    <div class="categories-tags">
         
         
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <h3 id="1-this-is-a-blog-test"><a class="markdownIt-Anchor" href="#1-this-is-a-blog-test">#</a> 1. This is a blog Test</h3>
-<ul>
-<li>First</li>
-<li>Second</li>
-</ul>
-<hr>
-<h3 id="2-show-text"><a class="markdownIt-Anchor" href="#2-show-text">#</a> 2. Show Text</h3>
-<ul>
-<li><strong>这是加粗</strong></li>
-</ul>
-<blockquote>
-<p><em>这是斜体</em></p>
-</blockquote>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
         
-        <span class="icon">
-            <i class="fa-solid fa-tags fa-fw"></i>
+        <span>
+            <a href="/myblog/tags/Test/" style="background: linear-gradient(120deg, #9abbf7 0%, #ffbbf4 100%)">
+                <span class="icon">
+                    <i class="fa-solid fa-tags fa-fw"></i>
+                </span>
+                Test
+            </a>
         </span>
         
         
         
-        <span class="tag">
-            
-            <a href="/myblog/tags/Test/" style="color: #ff7d73">Test</a>
-        </span>
         
-    </div>
-    <a href="/myblog/2023/08/10/test/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/myblog/2023/08/10/hello-world/">
-        <h2 class="post-title">Hello World</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/8/10
-        </span>
-        
-        
-    </div>
-    <div class="description">
-        <div class="content" v-pre>
-            
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start">#</a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post">#</a> Create a new post</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr><td data-num="1"></td><td><pre>$ hexo new <span class="token string">"My New Post"</span></pre></td></tr></table></figure><p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server">#</a> Run server</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr><td data-num="1"></td><td><pre>$ hexo server</pre></td></tr></table></figure><p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files">#</a> Generate static files</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr><td data-num="1"></td><td><pre>$ hexo generate</pre></td></tr></table></figure><p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3>
-<figure class="highlight bash"><figcaption data-lang="bash"><span>h</span></figcaption><table><tr><td data-num="1"></td><td><pre>$ hexo deploy</pre></td></tr></table></figure><p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-        
-    </div>
-    <a href="/myblog/2023/08/10/hello-world/" class="go-post">阅读全文</a>
-</div>
-
-
-        <div class="page-current">
-    <div class="prev">
-        
-    </div>
-    <div class="page-index">
-        
-        <span class="current">1</span>
-        
-    </div>
-    <div class="next">
-        
-    </div>
-</div>
-
     </div>
     
-    <div id="home-card">
-        <div id="card-style">
-    <div id="card-div">
-        <div class="avatar">
-            <img src="/myblog/images/avatar.jpg" alt="avatar" />
-        </div>
-        <div class="name">花落未央</div>
-        <div class="description">
-            <p>Description<br>
-…</p>
-
-        </div>
-        
-        
-        <div class="friend-links">
-            
-            <div class="friend-link">
-                <a href="https://it-rui.github.io">Argvchs</a>
+    <div class="timeline">
+        <div class="timeline-tail"></div>
+        <div class="timeline-content">
+            <div class="item-time">2023/8/10</div>
+            <a href="/myblog/2023/08/10/test/">
+                <h3>my one blog</h3>
+            </a>
+            <div class="info">
+                
+                
+                <span class="tags">
+                    <span class="icon">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </span>
+                    
+                    
+                    <span class="tag">
+                        
+                        <a href="/myblog/tags/Test/" style="color: #ffa2c4">Test</a>
+                    </span>
+                    
+                </span>
+                
             </div>
-            
         </div>
-        
-    </div>
-</div>
-
     </div>
     
 </div>
